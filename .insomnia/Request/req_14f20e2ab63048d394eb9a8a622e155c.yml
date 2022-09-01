@@ -1,0 +1,36 @@
+_id: req_14f20e2ab63048d394eb9a8a622e155c
+type: Request
+parentId: fld_324d767f5aa2410f896586ce9689e460
+modified: 1662030501248
+created: 1661966843044
+url: "{{ _.baseUrl }}/portaria/v1/bravas/config/access/"
+name: Read access settings
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"config": {
+    	"action": "getAccess",
+    	"target": {
+    		"name": "Porta Nativa 1"
+    		}
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6c98c6d5430b4de58ef1b097502373de
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1661960193674.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

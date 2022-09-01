@@ -1,0 +1,36 @@
+_id: req_4b1eee27b64245fa83073fc35d8f343c
+type: Request
+parentId: fld_e95335317a9b4300a21c366c82f04937
+modified: 1661948483993
+created: 1661948382288
+url: "{{ _.baseUrl }}/portaria/v1/bravas/config/group/"
+name: Delete
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"config": {
+    	"action": "deleteGroup",
+    		"target": {
+    		"name": "Moradores"
+    		}
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_2609b840eab54ec6804cf63f44087be3
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1661947609322
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,33 @@
+_id: req_0ffacd5b75c64316a925f41c1df6ae2b
+type: Request
+parentId: fld_324d767f5aa2410f896586ce9689e460
+modified: 1662030482715
+created: 1661966728359
+url: "{{ _.baseUrl }}/portaria/v1/bravas/config/access/"
+name: Read access names
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"config": {
+    	"action": "getAccessList"
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6c98c6d5430b4de58ef1b097502373de
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1661962331882.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

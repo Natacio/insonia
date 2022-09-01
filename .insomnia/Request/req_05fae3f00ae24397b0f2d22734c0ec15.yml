@@ -1,0 +1,52 @@
+_id: req_05fae3f00ae24397b0f2d22734c0ec15
+type: Request
+parentId: fld_e95335317a9b4300a21c366c82f04937
+modified: 1661957834433
+created: 1661948139496
+url: "{{ _.baseUrl }}/portaria/v1/bravas/config/group/"
+name: Edit
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"config": {
+    	"action": "editGroup",
+    	"target": {
+    		"name": "Moradores"
+    	},
+    	"name": "Moradores",
+    	"start_date": "17-01-2022",
+    	"end_date": "30-12-2024",
+    	"start_time": "8:00",
+    	"end_time": "10:00",
+    	"week" : [
+    	"Monday",
+    	"Tuesday"
+    	],
+    	"week_full": "true",
+    	"accesses": [
+    		"Porta Nativa 1",
+    		"Porta Nativa 2",
+    		"Porta Nativa 3",
+    		"Porta Nativa 4"
+    	]
+    		}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_958926da2f95490d958043110486fc53
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1661947609372
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

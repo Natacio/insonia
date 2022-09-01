@@ -1,0 +1,47 @@
+_id: req_dc3184e67a524473b22556b461002c3b
+type: Request
+parentId: fld_e1a7f97adcfb40eebe833fd988bc6a52
+modified: 1662030893123
+created: 1662030767569
+url: "{{ _.baseUrl }}/portaria/v1/bravas/command"
+name: Request QRCode Generation
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"command": {
+    	"type": "accessCmd",
+    	"action": "getQrCode",
+    	"user": {
+    	"name": "Natacio Pereira de Carvalho",
+    	"group": "Moradores"
+    	},
+    	"destination": "Academia",
+    	"expiry": {
+    	"start_time": "08:00:00",
+    	"start_date": "04/05/2022",
+    	"end_time": "18:00:00",
+    	"end_date": "25/10/2023"
+    	},
+    	"dynamic": 1,
+    	"credits": 1
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_dd42dfe5bbef49bbb2cfaee284f47328
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1662030767569
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

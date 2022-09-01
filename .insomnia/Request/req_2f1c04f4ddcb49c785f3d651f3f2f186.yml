@@ -1,0 +1,36 @@
+_id: req_2f1c04f4ddcb49c785f3d651f3f2f186
+type: Request
+parentId: fld_566b3cf6ffdb4f51ad051b370659a7c2
+modified: 1662030632158
+created: 1662030529627
+url: "{{ _.baseUrl }}/portaria/v1/bravas/config/bio-reader/"
+name: Get reader settings
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"config": {
+    	"action": "getReader",
+    		"target": {
+    		"name": "Entrada"
+    		}
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_e4a247d6f0f64fdf8995e8a31940ad27
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1662030529627
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

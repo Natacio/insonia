@@ -1,0 +1,39 @@
+_id: req_8cc2a50a6d7d4fceaaae754e6e1c1983
+type: Request
+parentId: fld_2ba0478c4e384343b315d60c56444ca1
+modified: 1661952826998
+created: 1661949413654
+url: "{{ _.baseUrl }}/portaria/v1/bravas/config/user/"
+name: Delete
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"config":{
+    		"action":"deleteUser",
+    		"target" : {
+    				"uuid":"e6dfdf1f-1207-4473-b491-ca00f4fa0b8d"
+    		},
+    		"readers": [
+    			"Entrada"
+    		]
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_dc351a3baf1d4b748c737aba62178e6d
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1661947345573
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

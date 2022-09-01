@@ -1,0 +1,54 @@
+_id: req_3470598af1e74668b1e0707dde803287
+type: Request
+parentId: fld_2ba0478c4e384343b315d60c56444ca1
+modified: 1661954650240
+created: 1661947345673
+url: "{{ _.baseUrl }}/portaria/v1/bravas/config/user/"
+name: Add
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"config":{
+    	"action":"addUser",
+    	"name":"Everton Cebolinha",
+    	"uuid":"e6dfdf1f-1207-4473-b491-ca00f4fa0b8d",
+    	"enabled":"true",
+    	"picture": {
+    		"type": "binary",
+    		"data": "{{ _.photo }}"
+    	},
+    	"tags":[
+    	"0002736951",
+    	"0008051079"
+    	],
+    	"remotes":[
+    	"231"
+    	],
+    	"groups":[
+    		"Moradores"
+    	],	
+    	"readers": [
+    		"Entrada"
+    	]
+    		
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_44042ba711aa4a1da8d1f339437cf246
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1661947345673
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

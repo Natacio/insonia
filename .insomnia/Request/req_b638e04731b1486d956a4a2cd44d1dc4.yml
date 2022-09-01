@@ -1,0 +1,40 @@
+_id: req_b638e04731b1486d956a4a2cd44d1dc4
+type: Request
+parentId: fld_71cf04be0d114ec6bcfdc80724d33f99
+modified: 1662030228651
+created: 1662030113288
+url: "{{ _.baseUrl }}/portaria/v1/bravas/command"
+name: Releasing an access
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"command": {
+    	"type": "accessCmd",
+    	"action": "open",
+    	"target": {
+    		"name": "Entrada Garagem"
+    	},
+    	"operator": "Condomob",
+    	"direction": 0,
+    	"user": "Natacio Pereira de Carvalho"
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_5eff7605066040df9a94b314ed301e96
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1662030113288
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

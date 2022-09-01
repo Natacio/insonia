@@ -1,0 +1,38 @@
+_id: req_78d6e19d84d0427682acfc540d6b954d
+type: Request
+parentId: fld_2540e705b61441c2a9ffbe576c062f8e
+modified: 1661953679151
+created: 1661950389269
+url: "{{ _.baseUrl }}/portaria/v1/bravas/config/user/"
+name: Get multi-user configuration
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"config": {
+    		"action": "getUserBatch",
+    		"target": {
+    			"name": [
+    			"Natacio Pereira de Carvalho"
+    				]
+    			}
+    		}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_cfd213d77cf04980824f85cde5b54c61
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1661949779837
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

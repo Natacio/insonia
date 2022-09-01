@@ -1,0 +1,33 @@
+_id: req_4ae822c1cb114a179ba7a44e4e65d6f4
+type: Request
+parentId: fld_324d767f5aa2410f896586ce9689e460
+modified: 1662030480210
+created: 1661966608298
+url: "{{ _.baseUrl }}/portaria/v1/bravas/config/access/"
+name: Read  access numbers
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"config": {
+    	"action": "getAccessSize"
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6c98c6d5430b4de58ef1b097502373de
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1661966608298
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

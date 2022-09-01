@@ -1,0 +1,37 @@
+_id: req_e3f2eb45205048888e14823fda5fc4e4
+type: Request
+parentId: fld_2540e705b61441c2a9ffbe576c062f8e
+modified: 1661955746991
+created: 1661950231565
+url: "{{ _.baseUrl }}/portaria/v1/bravas/config/user/"
+name: Get users names
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"config": {
+    	"action": "getUserList",
+    	"mode": 2,
+    	"start": 0,
+    	"size": 10,
+    	
+    	}
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_eb9ae046e98e42299d99052673fbd18d
+authentication:
+  type: bearer
+  token: "{{ _.key }}"
+metaSortKey: -1661949779887
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
